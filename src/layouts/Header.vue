@@ -1,11 +1,6 @@
 <template>
-  <div class="container">Delicious 
-    food for you</div>
+    <header>HEADER</header>
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style lang="scss">
 

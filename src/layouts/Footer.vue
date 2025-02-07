@@ -1,17 +1,12 @@
 <template>
-  <div class="container">Delicious 
-    food for you</div>
+    <footer>FOOTER</footer>
 </template>
-
-<script setup lang="ts">
-
-</script>
 
 <style lang="scss">
 
   @use '@/scss/mixings.scss';
 
-  header{
+  footer{
     @include mixings.flexbox(row,initial,center);
     padding: 25px;
   }
