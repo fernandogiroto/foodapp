@@ -1,5 +1,7 @@
 <template>
-    <header>HEADER</header>
+    <header>
+      <img src="@/assets/images/logo.png" class="logo" alt="">
+    </header>
 </template>
 
 <style lang="scss">
@@ -8,7 +10,11 @@
 
   header{
     @include mixings.flexbox(row,initial,center);
-    padding: 25px;
+    padding: 15px 20px;
+    position: sticky;
+    .logo{
+      width: 100px;
+    }
   }
   
 </style>

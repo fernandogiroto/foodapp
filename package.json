@@ -11,9 +11,13 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
+    "@j2only/slide-unlock": "^0.5.10",
+    "@tabler/icons-vue": "^3.30.0",
+    "@takuma-ru/vue-swipe-modal": "^5.0.5",
     "pinia": "^2.3.1",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "vue-router": "^4.5.0",
+    "vue3-carousel": "^0.13.0"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
