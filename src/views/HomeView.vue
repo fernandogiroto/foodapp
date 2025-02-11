@@ -87,8 +87,8 @@
   import { Carousel, Slide } from 'vue3-carousel'
   import SlideUnlock from "@j2only/slide-unlock"
   import { SwipeModal } from "@takuma-ru/vue-swipe-modal"
-  import Card from '@/components/ui/Card.vue'
-  import Input from '@/components/form/Input.vue'
+  import Card from '../components/ui/Card.vue'
+  import Input from '../components/form/Input.vue'
   import {IconUser,IconUsersGroup,IconMoodKid,IconDog,IconSearch} from '@tabler/icons-vue'
 
   const isOpen = ref(false)
