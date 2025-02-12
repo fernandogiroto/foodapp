@@ -23,8 +23,8 @@
       </template>
     </Input>
     <Carousel ref="carouselRef" v-bind="carouselConfig">
-      <Slide v-for="image in images" :key="image.id" @click="isOpen = true">
-        <Card type="item" :showImage="true" image="@/assets/images/plate.png" title="Strogonof" >
+      <Slide v-for="(product,index) in products" :key="product" @click="isOpen = true">
+        <Card type="item" :showImage="true" :image="index" :title="product.name" >
           <template #icons>
             <img src="@/assets/images/icons/health.png" width="22px">
           </template>
@@ -103,11 +103,12 @@
 
   const carouselRef = ref();
 
-  const images = Array.from({ length: 10 }, (_, index) => ({
-    id: index + 1,
-    url: `https://picsum.photos/800/600?random=${index + 1}`,
-  }));
-
+  const products = ref([
+    {name:'Strogonof',types:'Vegan'},
+    {name:'Lasanha',types:'Vegan'},
+    {name:'Hamburguer',types:'Vegan'},
+    {name:'Hamburguer',types:'Vegan'},
+  ])
 
 
 </script>

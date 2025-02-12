@@ -1,13 +1,13 @@
 <template>
   <!-- CARD DEFAULT -->
   <div class="card" v-if="type=='default'">
-    <img class="card__image" src="@/assets/images/plate.png" :alt="imageAlt"  v-show="showImage"/>
+    <!-- <img class="card__image" :src="image" :alt="imageAlt"  v-show="showImage"/> -->
     <slot />
   </div>
 
   <!-- CARD ITEM -->
   <div class="card-item" v-if="type=='item'">
-    <div class="card-item__background"  style="background-image: url('https://lirp.cdn-website.com/33406c6e/dms3rep/multi/opt/marmita-1-1920w.jpg');"></div>
+    <div class="card-item__background" :style="{ backgroundImage: `url('/images/marmita_${image}.png')` }"></div>
       <div class="card-item__info">
         <span class="card-item__info--title">{{ title }}</span>
         <div class="card-item__info__icons">
@@ -45,7 +45,7 @@
     width: {type: String, default: '100%'},
     background: {type: String, default: 'var(--primary-color)'},
     showImage:{type: Boolean, default: false},
-    image:{type: String},
+    image:{type: Number},
     imageAlt:{type: String, default: 'Trapezist SEO'},
   });
   
