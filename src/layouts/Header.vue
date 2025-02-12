@@ -1,21 +1,17 @@
 <template>
     <header>
       <img src="@/assets/images/logo.png" class="logo" alt="">
-
       <div class="menu-mobile">
         <img src="@/assets/images/avatar.png" class="menu-mobile__avatar" alt="">
-        <IconMenuDeep size="28" />
-        <!-- <img src="@/assets/images/icons/menu.svg" class="menu-mobile__hamburguer" alt=""> -->
-        
+        <IconMenuDeep size="28" />        
       </div>
     </header>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
-import {IconMenuDeep} from '@tabler/icons-vue'
+  import {IconMenuDeep} from '@tabler/icons-vue'
  
-
 </script>
 
 <style lang="scss">
