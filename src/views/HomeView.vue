@@ -6,15 +6,15 @@
       subtitle="Menu da semana com">
       <template #action>
         <slide-unlock
-        ref="vueslideunlock"
-        :auto-width="true"
-        :circle="true"
-        :width="100"
-        :height="35"
-        text="Criar menu da semana"
-        success-text="Vamos Começar"
-        name="slideunlock"
-        @completed="createMenu()"/>
+          ref="vueslideunlock"
+          :auto-width="true"
+          :circle="true"
+          :width="100"
+          :height="35"
+          text="Criar menu da semana"
+          success-text="Vamos Começar!"
+          name="slideunlock"
+          @completed="createMenu()"/>
       </template>
     </Card>
     <Input>
@@ -127,5 +127,13 @@
     width: 100%;
   }
 
+
+  .slideunlock.is-complete .slideunlock-progressbar {
+    background-color: var(--quaternary-color)  !important;
+  }
+  .slideunlock.is-complete .slideunlock-text {
+    color: var(--text-color);
+    font-weight: 600;
+  }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
     <header>
-      <img src="@/assets/images/logo.png" class="logo" alt="">
+      <img src="@/assets/images/logo.png" class="logo" alt="" @click="goTo('home')">
       <div class="menu-mobile">
         <img src="@/assets/images/avatar.png" class="menu-mobile__avatar" alt="">
         <IconMenuDeep size="28" />        
@@ -10,8 +10,13 @@
 
 <script setup lang="ts">
 
+  import router from '@/router'
   import {IconMenuDeep} from '@tabler/icons-vue'
- 
+
+  const goTo = (route:string) => {
+    router.push({name:route})
+  }
+
 </script>
 
 <style lang="scss">
