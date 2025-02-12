@@ -1,13 +1,9 @@
 <template>
   <div class="container"> 
-    <!-- <div class="home-intro">
-      <h1 class="title">Delicious food</h1>
-      <h1 class="title">for you</h1>
-    </div> -->
     <Card
       type="action"
-      title="up to 50%"
-      subtitle="Get special discount">
+      title="20% desconto"
+      subtitle="Menu da semana com">
       <template #action>
         <slide-unlock
         ref="vueslideunlock"
@@ -15,8 +11,8 @@
         :circle="true"
         :width="100"
         :height="35"
-        text="Criar meu menu"
-        success-text="success"
+        text="Criar menu da semana"
+        success-text="Vamos Começar"
         name="slideunlock"
         @completed="createMenu()"/>
       </template>

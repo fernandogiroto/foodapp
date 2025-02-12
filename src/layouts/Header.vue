@@ -29,7 +29,7 @@
       @include mixings.flexbox(row,space-between,center);
       gap: 5px;
       &__avatar{
-        width: 25px;
+        width: 30px;
         border-radius: 50%;
       }
     }
