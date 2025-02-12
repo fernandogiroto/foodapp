@@ -25,7 +25,7 @@
 
   header{
     @include mixings.flexbox(row,space-between,center);
-    padding: 15px 20px;
+    padding: 10px 20px;
     position: sticky;
     .logo{
       width: 100px;

@@ -26,7 +26,7 @@
   </div>
 
   <!-- CARD ICON -->
-  <div class="card-icon" v-if="type=='icon'">
+  <div class="card-icon" v-if="type=='icon'"  @click="$emit('click', $event)">
     <div class="card-icon__option">
       <slot name="icon"></slot>
     </div>
@@ -48,6 +48,8 @@
     image:{type: Number},
     imageAlt:{type: String, default: 'Trapezist SEO'},
   });
+
+  defineEmits(['click']);
   
 </script>
   
