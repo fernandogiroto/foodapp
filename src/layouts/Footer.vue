@@ -1,5 +1,5 @@
 <template>
-  <footer class="bottom-to-top--effect">
+  <footer class="bottom-to-top--effect" v-if="$route.name != 'intro'">
     <div class="nav-footer">
       <ul class="nav-footer__list">
         <li :class="['nav-footer__list__item', $route.name === 'Home' ? 'nav-footer__list__item--active' : '']">

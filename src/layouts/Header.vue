@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header v-if="$route.name != 'intro'">
       <img src="@/assets/images/logo.png" class="logo" alt="" @click="goTo('home')">
       <div class="menu-mobile">
         <img src="@/assets/images/avatar.png" class="menu-mobile__avatar" alt="">
