@@ -6,7 +6,7 @@
       <input 
         type="text" 
         v-model="searchQuery" 
-        placeholder="Search dishes, restaurants"
+        placeholder="Buscar por pratos, tipos e temperos"
       />
     </div>
   </template>

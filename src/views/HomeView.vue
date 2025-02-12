@@ -37,33 +37,33 @@
     </Carousel>
 
     <div class="home-categories">
-      <Card type="icon" background="#FF9F0D" border="#FF9F0D">
+      <Card type="icon" background="var(--primary-color)" border="var(--primary-color)">
         <template #icon>
-          <IconUser color="white" size="32" />
+          <IconUser  size="32" :color="'var(--theme-color)'"  />
         </template>
         <template #icon-description>
           <span class="card-icon--title">Pessoal</span>
         </template>
       </Card>
-      <Card type="icon">
+      <Card type="icon" background="var(--text-color)">
         <template #icon>
-          <IconUsersGroup size="32" />
+          <IconUsersGroup size="32" :color="'var(--theme-color)'" />
         </template>
         <template #icon-description>
           <span class="card-icon--title">Família</span>
         </template>
       </Card>
-      <Card type="icon">
+      <Card type="icon" background="var(--text-color)">
         <template #icon>
-          <IconMoodKid size="32" />
+          <IconMoodKid size="32" :color="'var(--theme-color)'" />
         </template>
         <template #icon-description>
           <span class="card-icon--title">Infantil</span>
         </template>
       </Card>
-      <Card type="icon">
+      <Card type="icon" background="var(--text-color)">
         <template #icon>
-          <IconDog size="32" />
+          <IconDog size="32" :color="'var(--theme-color)'" />
         </template>
         <template #icon-description>
           <span class="card-icon--title">Pet</span>

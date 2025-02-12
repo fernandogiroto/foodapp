@@ -43,7 +43,7 @@
     border: { type: String, default: '1px solid #000'},
     borderRadius: {type: String, default: '8px'},
     width: {type: String, default: '100%'},
-    background: {type: String, default: 'var(--tr-primary-color)'},
+    background: {type: String, default: 'var(--primary-color)'},
     showImage:{type: Boolean, default: false},
     image:{type: String},
     imageAlt:{type: String, default: 'Trapezist SEO'},
@@ -130,7 +130,7 @@
     padding: 16px;
     width: v-bind(width);
     height: auto;
-    background-color:#FF9F0D;
+    background-color:#00A896;
     border-radius: v-bind(borderRadius);
     &__intro{
       display: flex;
